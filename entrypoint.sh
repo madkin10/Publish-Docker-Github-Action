@@ -16,6 +16,9 @@ function main() {
   translateDockerTag
   DOCKERNAME="${INPUT_NAME}:${TAG}"
 
+  echo "CURRENT LOCATION:"
+  pwd
+  
   if uses "${INPUT_WORKDIR}"; then
     changeWorkingDirectory
   fi
